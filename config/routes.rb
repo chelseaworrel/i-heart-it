@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  get 'dashboard/show'
-
   root to: 'welcome#index'
-  
+
   get '/auth/instagram', as: :login
   get 'auth/instagram/callback', to: 'sessions#create'
-  get 'logout', to: 'sessions#destroy', as: "logout"
+  delete '/logout', as: :logout, to: 'sessions#destroy'
   get '/dashboard', to: 'dashboard#show'
 end
