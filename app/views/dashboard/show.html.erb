@@ -1,4 +1,6 @@
-<h1>You are Logged in</h1>
-<%= current_user.nickname %>
-
-<%= link_to "Logout", logout_path, method: :delete %>
+<%= link_to "Fauxagram", root_path %>
+Hello, <%= current_user.nickname %>
+<%= image_tag current_user.image%>
+<%= link_to "Log out", logout_path, method: :delete %>
+following: <%= client['counts']['follows'] %>
+followers: <%= client['counts']['followed_by'] %>

@@ -1,8 +1,8 @@
-<h1>Welcome!</h1>
-
 <% if current_user %>
-  <p>Hello, <%= current_user.nickname %></p>
-  <%= link_to "logout", logout_path, method: :delete %>
+  Hello, <%= current_user.nickname %>
+  <%= link_to "Log out", logout_path, method: :delete %>
 <% else %>
-  <%= link_to "login", login_path %>
+    <%= link_to "LOG IN with Instagram", login_path, class: "login" %>
 <% end %>
+
+    <h1>Fauxagram</h1>
