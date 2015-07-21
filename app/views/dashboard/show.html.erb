@@ -9,8 +9,8 @@
 </form><br>
 
 <div class="col-md-8">
-  <span><h4><%= user['full_name'] %></h4> <%= user['bio'] %></span><br>
-  <span><h4><strong><%= user['counts']['media'] %></strong> posts&nbsp;&nbsp;&nbsp;<strong><%= user['counts']['followed_by'] %></strong> followers&nbsp;&nbsp;&nbsp; <strong><%= user['counts']['follows'] %></strong> following</h4></span>
+  <span><h4><%= current_user.user['full_name'] %></h4> <%= current_user.user['bio'] %></span><br>
+  <span><h4><strong><%= current_user.user['counts']['media'] %></strong> posts&nbsp;&nbsp;&nbsp;<strong><%= current_user.user['counts']['followed_by'] %></strong> followers&nbsp;&nbsp;&nbsp; <strong><%= current_user.user['counts']['follows'] %></strong> following</h4></span>
 </div>
 
 <div class="col-md-4"></div>
@@ -18,7 +18,7 @@
 </div>
 
 <div class="row top">
-  <% client.user_recent_media(access_token: current_user.token).each do |h| %>
+  <% current_user.recent_media.each do |h| %>
 <div class="col-md-4 post-pics">
   <%= image_tag h.images.low_resolution.url %>
 </div>

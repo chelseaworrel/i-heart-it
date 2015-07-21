@@ -4,7 +4,7 @@
 <div class="row">
 <div class="feed">
 
-<% client.user_media_feed.each do |h| %>
+<% current_user.media.each do |h| %>
   <% if h.caption %>
     <p><%= h.caption.from.username%></p>
     <%= h.caption.from.full_name %><br>
@@ -16,6 +16,3 @@
 <% end %>
 </div>
 </div>
-<%= client.user_media_feed.each do |h| %>
-<%=  %>
-<% end %>

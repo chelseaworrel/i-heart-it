@@ -4,8 +4,7 @@ class ApplicationController < ActionController::Base
                 :path_to_dashboard,
                 :path_to_user,
                 :path_to_root,
-                :client,
-                :user
+                
   # before_action :is_user_present?
 
   def current_user
@@ -24,13 +23,8 @@ class ApplicationController < ActionController::Base
     params[:controller] == "welcome"
   end
 
-  def client
-    @instagram_client ||= Instagram.client(access_token: current_user.token)
-  end
 
-  def user
-    client.user
-  end
+
 
   # def is_user_present?
   #   redirect_to root_path unless current_user || params[:controller] == "welcome"
