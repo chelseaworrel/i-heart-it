@@ -13,3 +13,9 @@
 following: <%= client['counts']['follows'] %>
 followers: <%= client['counts']['followed_by'] %>
 </div>
+
+<% Instagram.user_recent_media(access_token: current_user.token).each do |h| %>
+<%= image_tag h.images.thumbnail.url %>
+<% end %>
+
+<% Instagram.user_recent_media(access_token: current_user.token) %>
