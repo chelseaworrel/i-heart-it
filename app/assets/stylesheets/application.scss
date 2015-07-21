@@ -22,15 +22,21 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.navbar-default {
+  background-color: white;
+}
+
 #top {
   height: 77px;
   padding: 26px 0;
   width: 100%;
-  border-bottom: 1px solid #edeeee;
+
   text-align: center;
   a {
-    font-style: bold;
-    font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: bold;
+      color: #125688;
+      font-size: 12px;
   }
 }
 
@@ -57,6 +63,20 @@ h2, h3, h4, h5, h6 {
 
 .name {
   text-align: center;
-    color: #4b4f54;
-      font-size: 34px;
+  color: #4b4f54;
+  font-size: 39px;
+  padding-bottom: 10px;
+}
+
+.name-full {
+  font-size: 14px;
+  color: #4b4f54;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+  padding-left: 126px;
+
+}
+
+.pic {
+  text-align: center;
 }

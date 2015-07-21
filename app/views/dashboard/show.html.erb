@@ -1,10 +1,14 @@
 <%= render partial: 'layouts/nav' %>
 
 <div class="main-layout">
-<div class="name"><%= current_user.nickname %></div>
-<%= current_user.name %>
+  <div class="col-md-4 pic"><%= image_tag current_user.image, class: "img-circle"%></div>
+<div class="name col-md-4"><%= current_user.nickname %></div>
+<div class="col-md-4">...c</div>
+<div class="col-md-4"></div>
+<div class="col-md-4">...d</div>
+<div class="col-md-6 name-full"><%= client['full_name'] %></div>
 <%= link_to "Fauxagram", root_path %>
-<%= image_tag current_user.image, class: "img-circle"%>
+<%= current_user.name %>
 <%= link_to "Log out", logout_path, method: :delete %>
 following: <%= client['counts']['follows'] %>
 followers: <%= client['counts']['followed_by'] %>
