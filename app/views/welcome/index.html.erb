@@ -4,13 +4,3 @@
 <% else %>
     <%= link_to "LOG IN with Instagram", login_path, class: "login" %>
 <% end %>
-
-    <h1>Fauxagram</h1>
-<div class="feed">
-
-<% Instagram.user_media_feed(access_token: current_user.token).each do |h| %>
-  <p><%= h.caption.from.username%></p>
-  <%= h.caption.from.full_name %><br>
-  <%= image_tag h.caption.from.profile_picture, class: "img-circle" %>
-<% end %>
-</div>

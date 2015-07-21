@@ -1,6 +1,15 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container col-md-4" id="top"> <%= link_to "Log out", logout_path, method: :delete %>
+  <% if current_user && index_path %>
+  <div class="container col-md-4" id="top"> <%= link_to user.username, dashboard_path %>
+  <% end %>
+  <% if current_user && current_path %>
+  <%= link_to "Log out", logout_path, method: :delete %>
+  <% end %>
   <div class="container col-md-4" id="padding"><%= link_to "Fauxagram", root_path %></div>
-  <div class="container col-md-4">...2</div>
+  <div class="container col-md-4"><form class="form-search">
+  <div class="input-append">
+    <input type="text" class="span2 search-query" placeholder="Search">
+  </div>
+</form></div>
 </div>
 </nav>

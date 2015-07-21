@@ -1,0 +1,18 @@
+<%= render partial: 'layouts/nav' %>
+
+<h1>jsdlkjfldksjflkdsjlfkdjs</h1>
+<div class="feed">
+
+<% client.user_media_feed.each do |h| %>
+  <p><%= h.caption.from.username%></p>
+  <%= h.caption.from.full_name %><br>
+  <%= image_tag h.caption.from.profile_picture, class: "img-circle" %>
+  <%= h.comments.count %>
+  <%= image_tag h.images.thumbnail.url, class: "feed-image" %><br>
+  <%= h.caption.text %>
+<% end %>
+</div>
+
+<%= client.user_media_feed.each do |h| %>
+<%=  %>
+<% end %>
