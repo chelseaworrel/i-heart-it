@@ -1,12 +1,12 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <% if current_user && index_path %>
-  <div class="container col-md-4" id="top"> <%= link_to user.username, dashboard_path %>
+<nav class="navbar navbar-default">
+  <% if current_user && path_to_user %>
+  <div class="col-md-4" id="top"> <%= link_to user.username, dashboard_path %>
   <% end %>
-  <% if current_user && current_path %>
+  <% if current_user && path_to_dashboard %>
   <%= link_to "Log out", logout_path, method: :delete %>
   <% end %>
-  <div class="container col-md-4" id="padding"><%= link_to "Fauxagram", root_path %></div>
-  <div class="container col-md-4"><form class="form-search">
+  <div class="col-md-4" id="padding"><%= link_to "Fauxagram", users_path %></div>
+  <div class="col-md-4"><form class="form-search">
   <div class="input-append">
     <input type="text" class="span2 search-query" placeholder="Search">
   </div>

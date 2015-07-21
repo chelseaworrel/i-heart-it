@@ -1,6 +1,20 @@
-<% if current_user %>
-  Hello, <%= current_user.nickname %>
-  <%= link_to "Log out", logout_path, method: :delete %>
-<% else %>
-    <%= link_to "LOG IN with Instagram", login_path, class: "login" %>
-<% end %>
+<section class="hero">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="circle-bg quote-1">
+        <p><% if current_user %>
+          <span>Hello, <%= link_to current_user.nickname, users_path %> </span>
+        <% end %></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="row text-center">
+  <div class="col-md-12">
+    <h1>Fauxagram</h1>
+    <h2 class="subheader"><% if !current_user %>
+      <%= link_to "LOG IN with Instagram", login_path, class: "login" %></h2>
+      <% end %>
+  </div>
+</div>

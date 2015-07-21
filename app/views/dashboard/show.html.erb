@@ -1,26 +1,28 @@
-<%= render partial: 'layouts/nav' %>
+<div class="row top">
 
-<div class="main-layout">
-  <div class="col-md-4 pic"><%= image_tag current_user.image, class: "img-circle"%></div>
+<div class="col-md-4 pic"><%= image_tag current_user.image, class: "img-circle"%></div>
+
 <form class="form-horizontal">
-<div class="name col-md-8"><%= current_user.nickname %>
-<%= button_to "edit profile", "", class: "edit-button" %>
-</div>
+  <div class="name col-md-8"><%= current_user.nickname %>
+    <%= button_to "edit profile", "", class: "edit-button" %>
+  </div>
 </form><br>
 
 <div class="col-md-8">
-<span><h4><%= user['full_name'] %></h4> <%= user['bio'] %></span><br>
-
-<span><h4><strong><%= user['counts']['media'] %></strong> posts&nbsp;&nbsp;&nbsp;<strong><%= user['counts']['followed_by'] %></strong> followers&nbsp;&nbsp;&nbsp; <strong><%= user['counts']['follows'] %></strong> following</h4></span>
+  <span><h4><%= user['full_name'] %></h4> <%= user['bio'] %></span><br>
+  <span><h4><strong><%= user['counts']['media'] %></strong> posts&nbsp;&nbsp;&nbsp;<strong><%= user['counts']['followed_by'] %></strong> followers&nbsp;&nbsp;&nbsp; <strong><%= user['counts']['follows'] %></strong> following</h4></span>
 </div>
+
 <div class="col-md-4"></div>
+
 </div>
 
-<div class="col-md-12">
-<% client.user_recent_media(access_token: current_user.token).each do |h| %>
-<%= image_tag h.images.thumbnail.url %>
-<%= h.comments.data %>
-<% end %>
+<div class="row top">
+  <% client.user_recent_media(access_token: current_user.token).each do |h| %>
+<div class="col-md-4 post-pics">
+  <%= image_tag h.images.low_resolution.url %>
+</div>
+  <% end %>
 </div>
 
 <% Instagram.user_recent_media(access_token: current_user.token) %>

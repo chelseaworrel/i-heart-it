@@ -24,16 +24,15 @@ body {
 
 .navbar-default {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: white;
+  border-color: #e7e7e7;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
 }
 
 #top {
-  height: 77px;
-  padding: 26px 0;
   width: 100%;
-
   text-align: center;
   a {
       font-family: 'Montserrat', sans-serif;
@@ -48,12 +47,13 @@ body {
   a {
     color: #125688;
     font-family: 'Lobster Two', cursive;
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 
 h1 {
   font-family: 'Lobster Two', cursive;
+  color: #4b4f54;
 }
 
 h2, h3, h5, h6 {
@@ -63,7 +63,7 @@ h4 {
   font-family: 'Arial', sans-serif;
   color: #4b4f54;
 }
-.main-layout {
+.classy{
   padding-top: 135px;
 }
 
@@ -88,6 +88,7 @@ h4 {
 }
 
 .feed {
+  padding-top: 20px;
   text-align: center;
   img {
     height: 30px;
@@ -145,5 +146,52 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-style: bold;
     color: #125688;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+.top {
+  padding-top: 40px;
+}
+
+.post-pics {
+  padding-bottom: 50px;
+}
+
+.hero {
+  background: url("https://unsplash.imgix.net/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center;
+  background-size: cover;
+  background-color: #fafafa;
+  height: 80vh;
+  margin-bottom: 3rem; }
+
+.circle-bg, .quote-1, {
+  margin-top: -2rem;
+  text-align: center;
+  opacity: .6;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem; }
+  @media only screen and (min-width: 64.063em) {
+    .circle-bg, .quote-1, {
+      margin: 0 auto;
+      margin-top: 2rem;
+      height: 13rem;
+      width: 13rem; } }
+  .circle-bg p, .quote-1 p, p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.quote-1 {
+  background: #f9f3bb;
+  color: #888;
+  z-index: 9999999;
+  position: relative; }
+  @media only screen and (min-width: 64.063em) {
+    .quote-1 {
+      margin-right: 10rem; }
+}
+
+.subheader {
+  padding-bottom: 50px;
 }
