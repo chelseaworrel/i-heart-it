@@ -7,8 +7,15 @@
 <div class="image">
   <%= image_tag h.images.standard_resolution.url, class: "feed-pics" %><br>
 </div>
+<div class="likes">
+  <%=h.likes.count%> likes
+</div><br>
   <%= h.caption.text if h.caption %>
 </div>
 <div class="row post-pics"></div>
 <% end %>
 </div>
+
+<% Instagram.user_recent_media(access_token: current_user.token).each do |h| %>
+<%= %>
+<% end %>
