@@ -2,18 +2,18 @@
 
 one:
   name: MyString
-  user_name: MyString
+  nickname: MyString
   email: MyString
   provider: MyString
   token: MyString
   uid: MyString
-  image_url: MyString
+  image: MyString
 
 two:
   name: MyString
-  user_name: MyString
+  nickname: MyString
   email: MyString
   provider: MyString
   token: MyString
   uid: MyString
-  image_url: MyString
+  image: MyString

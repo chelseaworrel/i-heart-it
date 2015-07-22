@@ -10,7 +10,10 @@
 <div class="likes">
   <%=h.likes.count%> likes
 </div><br>
-  <%= h.caption.text if h.caption %>
+  <%= h.caption.from.username %>
+  <div class="comment-text">
+  <h5><%= h.caption.text if h.caption %></h5>
+  </div>
 </div>
 <div class="row post-pics"></div>
 <% end %>
