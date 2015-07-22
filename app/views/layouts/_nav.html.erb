@@ -1,15 +1,16 @@
 <nav class="navbar navbar-default">
   <% if current_user && path_to_user %>
-  <div class="col-md-4" id="top"> <%= link_to current_user.user.username, dashboard_path %>
+<div class="col-md-4" id="top"> <%= link_to current_user.user.username, dashboard_path %>
   <% end %>
   <% if current_user && path_to_dashboard %>
   <%= link_to "Log out", logout_path, method: :delete %>
   <% end %>
-  <div class="col-md-4" id="padding"><%= link_to "Fauxagram", users_path %></div>
-  <div class="col-md-4"><form class="form-search">
-  <div class="input-append">
-    <input type="text" class="span2 search-query" placeholder="Search">
-  </div>
-</form></div>
+<div class="col-md-4" id="padding"><%= link_to "Fauxagram", users_path %></div>
+<div class="col-md-4"><form class="form-search">
+<div class="input-append">
+  <input type="text" class="span2 search-query" placeholder="Search">
+</div>
+</form>
+</div>
 </div>
 </nav>
