@@ -1,16 +1,16 @@
 <div class="row">
-  <% current_user.media.each do |h| %>
+  <% current_user.pag.each do |h| %>
 <div class="col-md-offset-3 col-md-6 col-md-offset-3 card">
 <% if h.caption %>
   <span><%= image_tag h.caption.from.profile_picture, class: "img-circle circle" %>&nbsp;&nbsp;<%= h.caption.from.username%></span>
 <% end %>
 <div class="image">
-  <%= image_tag h.images.standard_resolution.url, class: "feed-pics" %><br>
+  <%=image_tag h.images.standard_resolution.url, class: "feed-pics" %><br>
 </div>
 <div class="likes">
   <%=h.likes.count%> likes
 </div><br>
-  <%= h.caption.from.username %>
+  <%= h.caption.from.username if h.caption %>
   <div class="comment-text">
   <h5><%= h.caption.text if h.caption %></h5>
   </div>
@@ -19,6 +19,8 @@
 <% end %>
 </div>
 
-<% Instagram.user_recent_media(access_token: current_user.token).each do |h| %>
-<%= %>
+
+
+<% current_user.pag.each do |pag| %>
+<%=image_tag pag.images.thumbnail.url  %>
 <% end %>
