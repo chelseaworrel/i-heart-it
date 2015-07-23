@@ -13,7 +13,9 @@
 </div><br>
   <%= h.caption.from.username if h.caption %>
   <div class="comment-text">
-  <h5><%= h.caption.text if h.caption %></h5>
+    <% h.caption.text if h.caption do |caption| %>
+    <h5><%= caption.text %></h5>
+  <% end %>
   </div>
 </div>
 <div class="row post-pics"></div>
