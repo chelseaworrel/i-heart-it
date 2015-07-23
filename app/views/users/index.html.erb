@@ -1,12 +1,13 @@
 <div class="row">
-  <% current_user.pag.each do |h| %>
+  <% current_user.media.each do |h| %>
 <div class="col-md-offset-3 col-md-6 col-md-offset-3 card">
 <% if h.caption %>
   <span><%= image_tag h.caption.from.profile_picture, class: "img-circle circle" %>&nbsp;&nbsp;<%= h.caption.from.username%></span>
 <% end %>
 <div class="image">
-  <%=image_tag h.images.standard_resolution.url, class: "feed-pics" %><br>
+  <%=link_to image_tag h.images.standard_resolution.url, class: "feed-pics" %><br>
 </div>
+<%= binding.pry %>
 <div class="likes">
   <%=h.likes.count%> likes
 </div><br>
@@ -18,9 +19,3 @@
 <div class="row post-pics"></div>
 <% end %>
 </div>
-
-
-
-<% current_user.pag.each do |pag| %>
-<%=image_tag pag.images.thumbnail.url  %>
-<% end %>
