@@ -9,13 +9,14 @@
 </div>
 
 <div class="likes">
-  <%=h.likes.count%> likes
+  <%=h.likes['count']%> likes
 </div><br>
   <%= h.caption.from.username if h.caption %>
   <div class="comment-text">
-    <% h.caption.text if h.caption do |caption| %>
-    <h5><%= caption.text %></h5>
-  <% end %>
+    <h5><%= h.caption.text if h.caption %></h5>
+      <% h.comments.data.first(2).each do |comment| %>
+        <%= comment.from.username %> <h5> <%= comment.text %> </h5>
+      <% end %>
   </div>
 </div>
 <div class="row post-pics"></div>
