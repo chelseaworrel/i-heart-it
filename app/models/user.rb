@@ -26,8 +26,4 @@ class User < ActiveRecord::Base
   def recent_media
     client.user_recent_media
   end
-
-  def time
-    insta_time = client.user_media_feed.created_time
-  end
 end
