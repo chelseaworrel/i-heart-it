@@ -18,7 +18,7 @@
 @import "bootstrap";
 
 body {
-  background-color: #fafafa;
+  background-color: white;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -144,9 +144,9 @@ a {
 }
 
 .hero {
-  background: url("https://unsplash.imgix.net/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center;
+  background: image-url("hearts.png") no-repeat;
   background-size: cover;
-  background-color: #fafafa;
+  background-color: white;
   height: 80vh;
   margin-bottom: 3rem; }
 
@@ -169,7 +169,7 @@ a {
     transform: translateY(-50%); }
 
 .quote-1 {
-  background: #f9f3bb;
+  background: grey;
   color: #888;
   z-index: 9999999;
   position: relative; }
@@ -231,5 +231,20 @@ a {
   h5 {
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.login-link {
+  padding-bottom: 100px;
+  a {
+    color: #FF6699;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 50px;
+    font-style: bold;
+
   }
 }
