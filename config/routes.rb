@@ -7,3 +7,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   resources :users, only: [:index]
 end
+
+https://stormy-dawn-9838.herokuapp.com/auth/instagram/callback
