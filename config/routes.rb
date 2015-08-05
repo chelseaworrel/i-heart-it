@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/homedecor', to: 'homedecor#show'
   get '/homedesign', to: 'homedesign#show'
   get '/midmod', to: 'midmod#show'
+  get '/housebeautiful', to: 'housebeautiful#show'
 end

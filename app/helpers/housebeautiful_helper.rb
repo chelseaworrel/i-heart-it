@@ -1,0 +1,2 @@
+module HousebeautifulHelper
+end
