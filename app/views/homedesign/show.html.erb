@@ -1,4 +1,4 @@
 <h1>HOMEDESIGN</h1>
 <% current_user.homedesign.each do |h|  %>
-<%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
+  <%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
 <% end %>

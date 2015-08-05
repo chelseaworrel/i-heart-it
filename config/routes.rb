@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get '/oldhouse', to: 'oldhouse#show'
   get '/kidsrooms', to: 'kidsrooms#show'
   get '/interiordesign', to: 'interiordesign#show'
+  get '/shabbychic', to: 'shabbychic#show'
 end
