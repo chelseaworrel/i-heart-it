@@ -26,4 +26,22 @@ class User < ActiveRecord::Base
   def recent_media
     client.user_recent_media
   end
+
+  def pag
+    response = client.user_media_feed
+    album = [].concat(response)
+    max_id = response.pagination.next_max_id
+
+    while !(max_id.to_s.empty?) do
+        response = client.user_media_feed(:max_id => max_id)
+        max_id = response.pagination.next_max_id
+        album.concat(response)
+    end
+    @album = album
+  end
+
+  def wedding
+    @wedding = client.tag_recent_media('wedding', options = {})
+  end
+
 end

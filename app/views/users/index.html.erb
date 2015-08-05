@@ -22,3 +22,9 @@
 <div class="row post-pics"></div>
 <% end %>
 </div>
+
+
+<h1>HELLLO</h1>
+  <% current_user.wedding.each do |h|  %>
+  <%= image_tag h.images.standard_resolution.url %>
+  <% end %>
