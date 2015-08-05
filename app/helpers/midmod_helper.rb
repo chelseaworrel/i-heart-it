@@ -1,0 +1,2 @@
+module MidmodHelper
+end

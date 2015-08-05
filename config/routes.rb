@@ -9,4 +9,6 @@ Rails.application.routes.draw do
 
   get '/remodel', to: 'remodel#show'
   get '/homedecor', to: 'homedecor#show'
+  get '/homedesign', to: 'homedesign#show'
+  get '/midmod', to: 'midmod#show'
 end
