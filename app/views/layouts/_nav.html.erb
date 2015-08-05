@@ -1,6 +1,16 @@
 <nav class="navbar navbar-default">
   <div class="logo col-md-3">
-<%= link_to image_tag("i-heart-it.jpg") %>
+    <%= link_to image_tag("i-heart-it.jpg") %>
   </div>
-  <%= link_to "logout", logout_path, method: :delete %>
+<div class="user-path col-md-3">
+
+    <%= link_to current_user.user.username, dashboard_path %>
+</div>
+<div class="nav-links col-md-3">
+    <%= link_to "inspiration", "#" %>
+</div>
+<div class="nav-links col-md-3">
+
+    <%= link_to "logout", logout_path, method: :delete %>
+</div>
 </nav>

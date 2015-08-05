@@ -1,4 +1,10 @@
-<h1>REMODEL</h1>
-<% current_user.remodel.each do |h|  %>
-  <%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
-<% end %>
+<div class="category-title col-md-12">
+  <h1>remodel</h1>
+</div>
+<div class="row top">
+  <% current_user.remodel.each do |h|  %>
+<div class="col-md-4 post-pics">
+  <%= image_tag(h.images.low_resolution.url) %>
+</div>
+  <% end %>
+</div>
