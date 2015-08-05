@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   delete '/logout', as: :logout, to: 'sessions#destroy'
   get '/dashboard', to: 'dashboard#show'
   resources :users, only: [:index]
+
+  get '/remodel', to: 'remodel#show'
+  get '/homedecor', to: 'homedecor#show'
 end
