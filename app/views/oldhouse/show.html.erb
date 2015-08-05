@@ -1,0 +1,4 @@
+<h1>OLDHOUSE</h1>
+<% current_user.oldhouse.each do |h|  %>
+  <%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
+<% end %>
