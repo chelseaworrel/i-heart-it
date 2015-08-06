@@ -1,5 +1,19 @@
-<div class="login-link">
+<div class="login-link col-md-12">
   <% if !current_user %>
     <h1><%= link_to "Sign in with Instagram", login_path, class: "login" %></h1>
+    <h4>>>>>>>><<<<<<<</h4> 
   <% end %>
+</div>
+
+<div class="row top">
+<div class="col-md-4 post-pics">
+  <%= image_tag("cute.png", size: "600x600") %>
+</div>
+<div class="col-md-4 post-pics">
+  <%= image_tag("pink.png", size: "600x600") %>
+</div>
+<div class="col-md-4 post-pics">
+  <%= image_tag("pretty.png", size: "600x600") %>
+</div>
+
 </div>

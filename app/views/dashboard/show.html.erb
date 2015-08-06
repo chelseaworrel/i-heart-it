@@ -1,29 +1,25 @@
 <div class="row top">
 
-<div class="col-md-4 pic"><%= image_tag current_user.image, class: "img-circle"%></div>
+<div class="col-md-12 pic"><%= image_tag current_user.image, class: "img-circle", size: "200x200"%></div>
+  <div class="name col-md-12"><%= current_user.nickname %>
+    <h4>>>>>><<<<<</h4>
+</div>
 
-<form class="form-horizontal">
-  <div class="name col-md-8"><%= current_user.nickname %>
-    <%= link_to "edit profile", "https://instagram.com/accounts/edit", class: "edit-button btn btn-default" %>
-  </div>
-</form><br>
 
-<div class="col-md-8">
-  <span><h4><%= current_user.user.full_name %></h4> <%= current_user.user.bio %></span><br>
-  <span><h4><strong><%= current_user.user.counts.media %></strong>
-    posts&nbsp;&nbsp;&nbsp;<strong><%= current_user.user.counts.followed_by %></strong>
-    followers&nbsp;&nbsp;&nbsp;<strong><%= current_user.user.counts.follows %></strong>
-    following</h4></span>
+<div class="bio col-md-12">
+  <span><h3><%= current_user.user.full_name %></h3> <%= current_user.user.bio %></span><br>
 </div>
 
 <div class="col-md-4"></div>
-
 </div>
 
-<div class="row top">
+<div class="row-border col-md-12"></div>
+<h1>NEED IMAGES - NEED TO BE ABLE TO ADD IMAGE - PHOTO EDITOR</h1>
+
+<!-- <div class="row top">
   <% current_user.recent_media.each do |h| %>
 <div class="col-md-4 post-pics">
   <%= image_tag h.images.low_resolution.url %>
 </div>
   <% end %>
-</div>
+</div> -->
