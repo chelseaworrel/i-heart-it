@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'auth/instagram/callback', to: 'sessions#create'
   delete '/logout', as: :logout, to: 'sessions#destroy'
   get '/dashboard', to: 'dashboard#show'
-  resources :users, only: [:index]
 
   get '/pregnancyfashion', to: 'pregnancyfashion#show'
   get '/kidsparty', to: 'kidsparty#show'

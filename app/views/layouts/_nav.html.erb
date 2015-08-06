@@ -1,16 +1,31 @@
 <nav class="navbar navbar-default">
   <div class="logo col-md-3">
-    <%= link_to image_tag("i-heart-it.jpg") %>
+    <%= link_to image_tag("i-heart-it.jpg"), root_path %>
   </div>
 <div class="user-path col-md-3">
-
+  <% if current_user %>
     <%= link_to current_user.user.username, dashboard_path %>
+  <% end %>
 </div>
 <div class="nav-links col-md-3">
+  <% if current_user %>
     <%= link_to "Inspiration", inspiration_path %>
+    <% end %>
 </div>
 <div class="nav-links col-md-3">
-
+  <% if current_user %>
     <%= link_to "logout", logout_path, method: :delete %>
+  <% end%>
 </div>
+<div class="create-account col-md-9">
+  <% if !current_user %>
+  <%= link_to "Create Account", "#" %>
+  <% end %>
+</div>
+
+
+
+
+
+    <!-- <%= link_to "logout", logout_path, method: :delete %> -->
 </nav>

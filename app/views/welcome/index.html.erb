@@ -1,18 +1,5 @@
-<section class="hero">
-  <div class="row">
-    <div class="col-md-12">
-    </div>
-  </div>
-</section>
-  <%= link_to "logout", logout_path, method: :delete %>
-
-<div class="row text-center">
-  <div class="col-md-12">
-      <%= image_tag("i-heart-it.jpg") %>
-      <div class="login-link">
-      <% if !current_user %>
-        <h1><%= link_to "log in", login_path, class: "login" %></h1>
-      <% end %>
-    </div>
-  </div>
+<div class="login-link">
+  <% if !current_user %>
+    <h1><%= link_to "Sign in with Instagram", login_path, class: "login" %></h1>
+  <% end %>
 </div>
