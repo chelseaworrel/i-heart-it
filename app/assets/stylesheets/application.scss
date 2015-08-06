@@ -29,7 +29,6 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: 'Dawning of a New Day', cursive;
-
 }
 
 #top {
@@ -42,28 +41,17 @@ body {
   }
 }
 
-#padding {
-  text-align: center;
-  a {
-    color: #125688;
-    font-family: 'Lobster Two', cursive;
-    font-size: 25px;
-  }
-}
-
 h1 {
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Playfair Display SC', serif;
   color: #4b4f54;
 }
 
-h2, h3, h5, h6 {
-  font-family: 'Arial', sans-serif;
-}
-h4 {
-  font-family: 'Arial', sans-serif;
+h2, h3, h4, h5, h6 {
+  font-family: 'Dawning of a New Day', cursive;
   color: #4b4f54;
 }
-.classy{
+
+.classy {
   padding-top: 135px;
 }
 
@@ -108,18 +96,18 @@ h4 {
   font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
-.search-query {
-  border-radius: 20px;
-    border: 1px solid #e0e4e5;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #fafafa;
-    font-family: 'Arial', sans-serif;
-    color: #4b4f54;
-}
+// .search-query {
+//   border-radius: 20px;
+//     border: 1px solid #e0e4e5;
+//     text-align: center;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+//     background-color: #fafafa;
+//     font-family: 'Arial', sans-serif;
+//     color: #4b4f54;
+// }
 
 .followers {
   text-align: center;
@@ -263,11 +251,13 @@ a {
 
 .category-title {
   h1 {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 100px;
+    font-family: 'Nixie One', cursive;
+    font-size: 80px;
+    color: black;
   }
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .user-path {
@@ -301,8 +291,8 @@ a {
     font-family: 'Playfair Display SC', serif;
     text-align: center;
     color: black;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
     font-size: 50px;
   }
 }
