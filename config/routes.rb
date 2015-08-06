@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   get '/kidsrooms', to: 'kidsrooms#show'
   get '/kidsfurniture', to: 'kidsfurniture#show'
   get '/kidsdecor', to: 'kidsdecor#show'
+  get '/inspiration', to: 'inspiration#index'
 end
