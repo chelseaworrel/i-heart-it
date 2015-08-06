@@ -280,15 +280,27 @@ a {
 }
 
 .category-images {
+  text-align: center;
 img {
-  align-items: center;
 
-  width: 500px;
-  height: 400px;
-  padding-left: 50px;
+
+  // width: 500px;
+  // height: 400px;
+  // padding-left: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 15px;
+  // padding-right: 15px;
 }
 
+}
+
+.inspiration-title {
+  h1 {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
 }
