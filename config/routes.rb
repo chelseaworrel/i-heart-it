@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   resources :users, only: [:index]
 
-  get '/babybump', to: 'babybump#show'
+  get '/pregnancyfashion', to: 'pregnancyfashion#show'
   get '/kidsparty', to: 'kidsparty#show'
   get '/kidsfashion', to: 'kidsfashion#show'
   get '/kidsfood', to: 'kidsfood#show'

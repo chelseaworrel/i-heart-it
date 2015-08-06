@@ -40,8 +40,8 @@ class User < ActiveRecord::Base
     @album = album
   end
 
-  def babybump
-    client.tag_recent_media('babybump', options = {:count => 50})
+  def pregnancyfashion
+    client.tag_recent_media('pregnancyfashion', options = {:count => 50})
   end
 
   def kidsparty

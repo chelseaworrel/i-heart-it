@@ -1,0 +1,2 @@
+module PregnancyfashionHelper
+end

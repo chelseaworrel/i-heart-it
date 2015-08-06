@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe babybumpController, type: :controller do
+RSpec.describe pregnancyfashionController, type: :controller do
 
 end
