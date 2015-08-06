@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe HomedesignController, type: :controller do
+RSpec.describe kidsfashionController, type: :controller do
 
 end

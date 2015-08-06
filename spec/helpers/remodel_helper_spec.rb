@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 # Specs in this file have access to a helper object that includes
-# the RemodelHelper. For example:
+# the babybumpHelper. For example:
 #
-# describe RemodelHelper do
+# describe babybumpHelper do
 #   describe "string concat" do
 #     it "concats two strings with spaces" do
 #       expect(helper.concat_strings("this","that")).to eq("this that")
 #     end
 #   end
 # end
-RSpec.describe RemodelHelper, type: :helper do
+RSpec.describe babybumpHelper, type: :helper do
   pending "add some examples to (or delete) #{__FILE__}"
 end

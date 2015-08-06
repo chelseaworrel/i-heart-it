@@ -7,13 +7,13 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   resources :users, only: [:index]
 
-  get '/remodel', to: 'remodel#show'
-  get '/homedecor', to: 'homedecor#show'
-  get '/homedesign', to: 'homedesign#show'
-  get '/midmod', to: 'midmod#show'
-  get '/housebeautiful', to: 'housebeautiful#show'
-  get '/oldhouse', to: 'oldhouse#show'
+  get '/babybump', to: 'babybump#show'
+  get '/kidsparty', to: 'kidsparty#show'
+  get '/kidsfashion', to: 'kidsfashion#show'
+  get '/kidsfood', to: 'kidsfood#show'
+  get '/kidsofinstagram', to: 'kidsofinstagram#show'
+  get '/babyshower', to: 'babyshower#show'
   get '/kidsrooms', to: 'kidsrooms#show'
-  get '/interiordesign', to: 'interiordesign#show'
-  get '/shabbychic', to: 'shabbychic#show'
+  get '/kidsfurniture', to: 'kidsfurniture#show'
+  get '/kidsdecor', to: 'kidsdecor#show'
 end

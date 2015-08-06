@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe ShabbychicController, type: :controller do
+RSpec.describe kidsdecorController, type: :controller do
 
 end

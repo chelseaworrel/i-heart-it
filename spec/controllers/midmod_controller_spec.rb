@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe MidmodController, type: :controller do
+RSpec.describe kidsfoodController, type: :controller do
 
 end

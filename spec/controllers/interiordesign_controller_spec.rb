@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe InteriordesignController, type: :controller do
+RSpec.describe kidsfurnitureController, type: :controller do
 
 end

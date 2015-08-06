@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe OldhouseController, type: :controller do
+RSpec.describe babyshowerController, type: :controller do
 
 end

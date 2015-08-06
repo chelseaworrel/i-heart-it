@@ -1,0 +1,10 @@
+<div class="category-title col-md-12">
+  <h1>kids party</h1>
+</div>
+<div class="row top">
+  <% current_user.kidsparty.each do |h|  %>
+<div class="col-md-4 post-pics">
+  <%= image_tag(h.images.low_resolution.url) %>
+</div>
+  <% end %>
+</div>

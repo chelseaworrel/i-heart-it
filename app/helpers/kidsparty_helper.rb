@@ -1,0 +1,2 @@
+module KidspartyHelper
+end

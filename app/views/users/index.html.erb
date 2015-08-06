@@ -24,12 +24,12 @@
 </div>
 
 
-<h1>HOMEDECOR</h1>
-  <% current_user.homedecor.each do |h|  %>
+<h1>kidsparty</h1>
+  <% current_user.kidsparty.each do |h|  %>
   <%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
   <% end %>
 
-  <h1>REMODEL</h1>
-  <% current_user.remodel.each do |h|  %>
+  <h1>babybump</h1>
+  <% current_user.babybump.each do |h|  %>
   <%= image_tag(h.images.standard_resolution.url, size: "30x30") %>
   <% end %>

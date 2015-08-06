@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe RemodelController, type: :controller do
+RSpec.describe babybumpController, type: :controller do
 
 end
