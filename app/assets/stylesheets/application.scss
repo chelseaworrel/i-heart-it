@@ -280,18 +280,20 @@ a {
 }
 
 .category-images {
+  a {
+    font-family: 'Dawning of a New Day', cursive;
+    text-align: center;
+    color: #4b4f54;
+    font-size: 50px;
+  }
+  h4 {
+    font-family: 'Dawning of a New Day', cursive;
+    color: #eea09c;
+  }
   text-align: center;
-img {
-
-
-  // width: 500px;
-  // height: 400px;
-  // padding-left: 60px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  // padding-right: 15px;
-}
-
+  img {
+    padding-top: 30px;
+    padding-bottom: 30px;}
 }
 
 .inspiration-title {
@@ -300,7 +302,11 @@ img {
     text-align: center;
     color: black;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     font-size: 50px;
   }
+}
+
+.row-bottom {
+  padding-bottom: 100px;
 }
