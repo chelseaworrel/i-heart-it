@@ -2,9 +2,9 @@
   <h1>kids rooms</h1>
 </div>
 <div class="row top">
-  <% current_user.kidsrooms.each do |h|  %>
+  <% current_user.kidsrooms.each do |instagram_user|  %>
 <div class="col-md-4 post-pics">
-  <%= image_tag(h.images.low_resolution.url) %>
+  <%= render "shared/form", locals: instagram_user %>
 </div>
   <% end %>
 </div>

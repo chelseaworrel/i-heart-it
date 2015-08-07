@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'auth/instagram/callback', to: 'sessions#create'
   delete '/logout', as: :logout, to: 'sessions#destroy'
   get '/dashboard', to: 'dashboard#show'
+  resources :pictures
 
   get '/pregnancyfashion', to: 'pregnancyfashion#show'
   get '/kidsparty', to: 'kidsparty#show'
@@ -17,5 +18,4 @@ Rails.application.routes.draw do
   get '/kidsdecor', to: 'kidsdecor#show'
   get '/inspiration', to: 'inspiration#index'
 
-  resources :pictures
 end
