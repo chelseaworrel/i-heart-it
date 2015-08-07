@@ -4,10 +4,7 @@
 <div class="row top">
   <% current_user.kidsfashion.each do |h|  %>
 <div class="col-md-4 post-pics">
-<%= form_for(Picture.new) do %>
-   <%= hidden_field_tag :image_url, h.images.low_resolution.url %>
-   <%= button_tag image_tag(h.images.low_resolution.url, class: "tiny button") %>
-   <% end %></li>
+<%= render "shared/form", locals: h %>
 </div>
   <% end %>
 </div>
