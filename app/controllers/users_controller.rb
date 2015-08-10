@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
-  def index
-  end
-  
   def show
+    @pictures = current_user.pictures
+  end
+
+  def destroy
+    redirect_to dashboard_path
+  end
+
+  def new
   end
 end

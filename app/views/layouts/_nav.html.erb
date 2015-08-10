@@ -4,7 +4,7 @@
   </div>
 <div class="user-path col-md-3">
   <% if current_user %>
-    <%= link_to current_user.user.username, dashboard_path %>
+    <%= link_to current_user.user.username, user_path(current_user) %>
   <% end %>
 </div>
 <div class="nav-links col-md-3">
@@ -19,7 +19,7 @@
 </div>
 <div class="create-account col-md-9">
   <% if !current_user %>
-  <%= link_to "Create Account", create_account_path %>
+  <%= link_to "Create Account", new_user_path %>
   <% end %>
 </div>
 

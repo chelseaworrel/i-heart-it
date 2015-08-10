@@ -3,12 +3,12 @@ class PicturesController < ApplicationController
 
   def create
     current_user.pictures.create(picture_params)
-    redirect_to dashboard_path
+    redirect_to user_path(current_user)
   end
 
   def destroy
     @picture.destroy
-    redirect_to dashboard_path
+    redirect_to user_path(current_user)
   end
 
   private
