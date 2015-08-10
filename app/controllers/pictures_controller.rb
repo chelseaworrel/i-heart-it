@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
-  before_action :set_picture
-  
+  before_action :set_picture, only: [:destroy]
+
   def create
     current_user.pictures.create(picture_params)
     redirect_to dashboard_path
@@ -8,7 +8,6 @@ class PicturesController < ApplicationController
 
   def destroy
     @picture.destroy
-    # flash.notice = "Article '#{@article.title}' DELETED!!"
     redirect_to dashboard_path
   end
 

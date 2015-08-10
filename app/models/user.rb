@@ -77,18 +77,3 @@ class User < ActiveRecord::Base
     client.tag_recent_media('kidsdecor', options = {:count => 50})
   end
 end
-
-class Feed
-  def self.find_tag(user, tag)
-    self.set_client.tag_recent_media(tag, option = {:count => 50 })
-  end
-
-  def self.set_client
-    Instagram.client(access_token: token)
-  end
-end
-
-def show
-  category = Category.find_by(name: params[:slug])
-  Feed.find_tag(current_user, category.name)
-end

@@ -16,10 +16,15 @@
 <div class="row-border col-md-12"></div>
 <h1>NEED IMAGES - NEED TO BE ABLE TO ADD IMAGE - PHOTO EDITOR</h1>
 
+<div class="row">
+  <div class="layout-center col-md-12">
+
   <% @pictures.each do |pic| %>
     <%= image_tag pic.image_url %>
-    <%= link_to "Delete", picture_path(pic), method: :delete, data: {confirm: "Really delete the article?"} %>
+    <%= link_to "X", picture_path(pic), method: :delete, data: {confirm: "Really delete the article?"} %>
   <% end %>
+  </div>
+</div>
 
 <!-- <div class="row top">
   <% current_user.recent_media.each do |h| %>
