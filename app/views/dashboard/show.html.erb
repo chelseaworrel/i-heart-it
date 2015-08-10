@@ -18,6 +18,7 @@
 
   <% @pictures.each do |pic| %>
     <%= image_tag pic.image_url %>
+    <%= link_to "Delete", picture_path(pic), method: :delete, data: {confirm: "Really delete the article?"} %>
   <% end %>
 
 <!-- <div class="row top">
