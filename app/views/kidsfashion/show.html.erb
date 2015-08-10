@@ -3,7 +3,7 @@
 </div>
 
 <div class="row top">
-  <% current_user.kidsfashion.each do |instagram_user|  %>
+  <% current_user.feed('kidsfashion').each do |instagram_user|  %>
 <div class="col-md-4 post-pics">
   <%= render "shared/form", locals: instagram_user %>
 </div>

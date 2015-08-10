@@ -41,39 +41,7 @@ class User < ActiveRecord::Base
     @album = album
   end
 
-  def pregnancyfashion
-    client.tag_recent_media('pregnancyfashion', options = {:count => 50})
-  end
-
-  def kidsparty
-    client.tag_recent_media('kidsparty', options = {:count => 50})
-  end
-
-  def kidsfashion
-    client.tag_recent_media('kidsfashion', options = {:count => 50})
-  end
-
-  def kidsfood
-    client.tag_recent_media('kidsfood', options = {:count => 50})
-  end
-
-  def kidsofinstagram
-    client.tag_recent_media('kidsofinstagram', options = {:count => 50})
-  end
-
-  def babyshower
-    client.tag_recent_media('babyshower', options = {:count => 50})
-  end
-
-  def kidsrooms
-    client.tag_recent_media('kidsrooms', options = {:count => 50})
-  end
-
-  def kidsfurniture
-    client.tag_recent_media('kidsfurniture', options = {:count => 50})
-  end
-
-  def kidsdecor
-    client.tag_recent_media('kidsdecor', options = {:count => 50})
+  def feed(category)
+    client.tag_recent_media(category, options = {:count => 50})
   end
 end

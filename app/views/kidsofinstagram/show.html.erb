@@ -2,7 +2,7 @@
   <h1>kids "cheese!"</h1>
 </div>
 <div class="row top">
-  <% current_user.kidsofinstagram.each do |instagram_user|  %>
+  <% current_user.feed('kidsofinstagram').each do |instagram_user|  %>
 <div class="col-md-4 post-pics">
   <%= render "shared/form", locals: instagram_user %>
 </div>

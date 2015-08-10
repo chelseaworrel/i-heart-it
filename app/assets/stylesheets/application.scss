@@ -182,7 +182,7 @@ a {
   a {
     color: #4b4f54;
     font-family: 'Dawning of a New Day', cursive;
-    font-size: 50px;
+    font-size: 35px;
   }
   h4 {
     font-family: 'Dawning of a New Day', cursive;
@@ -264,6 +264,15 @@ a {
     background-color: #f7f8f9;
 }
 
-.layout-center {
+.layout-profile {
   text-align: center;
+  padding-bottom: 75px;
+}
+
+.create_account {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+  padding-top: 50px;
+  color: #80777a;
 }

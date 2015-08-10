@@ -13,7 +13,9 @@ gem 'figaro'
 gem 'instagram'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
+gem 'cloudinary', '~> 1.0.24'
+gem 'attachinary'
 
 group :development, :test do
   gem 'byebug'

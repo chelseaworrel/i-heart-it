@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
   delete '/dashboard', to: 'dashboard#destroy'
   resources :pictures
+  get '/create_account', to: 'create_account#show'
 
   get '/pregnancyfashion', to: 'pregnancyfashion#show'
   get '/kidsparty', to: 'kidsparty#show'
