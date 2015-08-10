@@ -20,7 +20,7 @@
   <div class="layout-profile col-md-12">
     <% @pictures.each do |pic| %>
       <%= image_tag pic.image_url %>
-      <%= link_to "X", picture_path(pic), method: :delete, data: {confirm: "Really delete the article?"} %>
+      <%= link_to "X", picture_path(pic), method: :delete, data: {confirm: "sure you want to delete this photo?!"} %>
       <% end %>
   </div>
 </div>

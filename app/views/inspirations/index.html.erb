@@ -3,8 +3,6 @@
 </div>
 <div class="category row">
   <% @categories.each do |category|%>
-    <%= link_to "#{category.name}", inspiration_path(category)  %>
+    <%= link_to "#{category.title}", inspiration_path(category)  %><br>
   <% end %>
 </div>
-
-  
