@@ -16,6 +16,7 @@ gem 'autoprefixer-rails'
 gem 'rails_12factor', group: :production
 gem 'cloudinary', '~> 1.0.24'
 gem 'attachinary'
+gem 'responders'
 
 group :development, :test do
   gem 'byebug'
