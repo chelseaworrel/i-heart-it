@@ -7,8 +7,11 @@
 <div class="row">
   <div class="category-images col-md-12">
     <% @categories.each do |category|%>
+    <div class="dhfjkdshkj col-md-4">
+
       <%= image_tag category.image_url %>
       <%= link_to "#{category.title}", inspiration_path(category)  %> <h4>>>></h4>
+    </div>
     <% end %>
   </div>
 </div>
