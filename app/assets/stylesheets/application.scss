@@ -224,6 +224,7 @@ a {
     text-align: center;
     color: #4b4f54;
     font-size: 50px;
+    display: block;
   }
   h4 {
     font-family: 'Dawning of a New Day', cursive;
@@ -232,7 +233,8 @@ a {
   text-align: center;
   img {
     padding-top: 30px;
-    padding-bottom: 30px;}
+    padding-bottom: 30px;
+  }
 }
 
 .inspiration-title {
@@ -267,6 +269,15 @@ a {
 .layout-profile {
   text-align: center;
   padding-bottom: 75px;
+  img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  a {
+    display: block;
+  }
 }
 
 .create_account {

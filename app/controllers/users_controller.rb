@@ -4,9 +4,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    redirect_to dashboard_path
-  end
-
-  def new
+    redirect_to user_path
   end
 end

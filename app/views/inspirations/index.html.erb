@@ -1,9 +1,14 @@
-<div class="inspiration-title col-md-12">
-  <h1>Inspiration</h1>
+<div class="row">
+  <div class="inspiration-title col-md-12">
+    <h1>Inspiration</h1>
+  </div>
 </div>
-<div class="category row">
-  <% @categories.each do |category|%>
-    <%= link_to "#{category.title}", inspiration_path(category)  %>
-    <%= image_tag category.image_url %><br>
-  <% end %>
+
+<div class="row">
+  <div class="category-images col-md-12">
+    <% @categories.each do |category|%>
+      <%= image_tag category.image_url %>
+      <%= link_to "#{category.title}", inspiration_path(category)  %> <h4>>>></h4>
+    <% end %>
+  </div>
 </div>

@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   resources :pictures
   resources :inspirations, only: [:show, :index]
-  resources :users, only: [:show, :destroy, :new]
+  resources :users
+
 end
