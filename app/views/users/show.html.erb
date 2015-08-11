@@ -19,7 +19,7 @@
 <div class="row">
   <div class="style-show col-md-12">
     <% @pictures.each do |pic| %>
-      <%= link_to image_tag(pic.image_url), "#myModal-#{pic.id}", :data => { :toggle =>"modal", :target => "#myModal-#{pic.id}"} %>
+      <%= link_to image_tag(pic.image_url, size: '400x400'), "#myModal-#{pic.id}", :data => { :toggle =>"modal", :target => "#myModal-#{pic.id}"} %>
       <div id="myModal-<%= pic.id %>" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">

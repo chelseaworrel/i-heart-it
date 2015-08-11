@@ -307,8 +307,14 @@ a {
 
 .modal-style {
   img {
+    width: 600px;
+    height: 600px;
+  }
+}
 
-  width: 700px;
-  height: 700px;
+.post-pics {
+  img {
+    width: 400px;
+    height: 400px
   }
 }
